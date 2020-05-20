@@ -7,11 +7,11 @@ class Vehicle:
         return self.mileage
 
 
-class Farzi:
-    def __init__(self, farzi):
-        self.farzi = farzi
+class Dummy:
+    def __init__(self, dummy):
+        self.dummy = dummy
 
-    def check_farzi(self, name):
-        if name == self.farzi:
+    def check_dummy(self, name):
+        if name == self.dummy:
             return True
         return False

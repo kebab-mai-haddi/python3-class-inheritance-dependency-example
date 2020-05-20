@@ -1,4 +1,4 @@
-from vehicles import Vehicle, Farzi
+from vehicles import Vehicle, Dummy
 from transport import CarPollutionPermit, BikePollutionPermit
 import pandas as pd
 
@@ -18,7 +18,7 @@ class Car(Vehicle):
         print(self.pollution_compliance)
 
 
-class Bike(Vehicle, BikePollutionPermit, Farzi):
+class Bike(Vehicle, BikePollutionPermit, Dummy):
     def __init__(self, model, year):
         self.model = model
         self.year = year
